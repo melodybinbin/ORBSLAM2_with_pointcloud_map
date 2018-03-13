@@ -38,7 +38,8 @@ DepthMapFactor: 5000.0
 #--------------------------------------------------------------------------------------------
 
 # ORB Extractor: Number of features per image
-ORBextractor.nFeatures: 1000
+#ORBextractor.nFeatures: 1000 #change it to next line
+ORBextractor.nFeatures: 3000 #add it for better visualization of point cloud
 
 # ORB Extractor: Scale factor between levels in the scale pyramid 	
 ORBextractor.scaleFactor: 1.2
@@ -67,3 +68,5 @@ Viewer.ViewpointY: -0.7
 Viewer.ViewpointZ: -1.8
 Viewer.ViewpointF: 500
 
+PointCloudMapping.Resolution: 0.01 #add it for better visualization of point cloud 
+#PointCloudMapping.Resolution: 0.0001 #add it for better visualization of point cloud 
