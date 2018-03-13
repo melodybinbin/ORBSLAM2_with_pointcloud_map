@@ -320,11 +320,11 @@ void System::Shutdown()
 {
     mpLocalMapper->RequestFinish();
     mpLoopCloser->RequestFinish();
-    mpPointCloudMapping->shutdown();
+//    mpPointCloudMapping->shutdown(); //hold the GUI at the end
 
     if(mpViewer)
     {
-        mpViewer->RequestFinish();
+//       mpViewer->RequestFinish(); //hold the GUI at the end
         while(!mpViewer->isFinished())
             usleep(5000);
     }
