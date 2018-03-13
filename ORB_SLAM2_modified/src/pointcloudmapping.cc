@@ -20,6 +20,7 @@
 #include "pointcloudmapping.h"
 #include <KeyFrame.h>
 #include <opencv2/highgui/highgui.hpp>
+#include <pcl/io/pcd_io.h> //save pcd file
 #include <pcl/visualization/cloud_viewer.h>
 #include <pcl/common/projection_matrix.h>
 #include "Converter.h"
@@ -124,8 +125,8 @@ void PointCloudMapping::viewer()
         voxel.filter( *tmp );
         globalMap->swap( *tmp );
         viewer.showCloud( globalMap );
+        pcl::io::savePCDFile( "ORBSLAM2_pointcloud.pcd", *globalMap );//save pcd file 
         cout << "show global map, size=" << globalMap->points.size() << endl;
         lastKeyframeSize = N;
     }
 }
-
