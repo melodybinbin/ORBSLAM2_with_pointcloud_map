@@ -102,6 +102,7 @@ public:
 
     // Current Frame
     Frame mCurrentFrame;
+    cv::Mat mImRGB;//add it for RGB color
     cv::Mat mImGray;
     cv::Mat mImDepth; // adding mImDepth member to realize pointcloud view
 
