@@ -1,6 +1,7 @@
 echo "Configuring and building Thirdparty/DBoW2 ..."
 
 cd Thirdparty/DBoW2
+rm -rf build # before 'mkdir build' add 'rm -rf build'
 mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
@@ -10,6 +11,7 @@ cd ../../g2o
 
 echo "Configuring and building Thirdparty/g2o ..."
 
+rm -rf build # before 'mkdir build' add 'rm -rf build'
 mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
@@ -25,6 +27,7 @@ cd ..
 
 echo "Configuring and building ORB_SLAM2 ..."
 
+rm -rf build # before 'mkdir build' add 'rm -rf build'
 mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
