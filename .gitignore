@@ -24,4 +24,7 @@ KeyFrameTrajectory.txt
 #cmake-build-debug
 cmake-build-debug/
 
+#in directory of Vocabulary
+ORBvoc.txt
+
 
