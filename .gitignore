@@ -14,9 +14,14 @@ bin/
 
 #pcd files
 *.pcd
+#screenshot for pcd files using J¡¡in pcl_viewer
+*.cam
+*.png
 
 #KeyFrameTrajectory
 KeyFrameTrajectory.txt
 
 #cmake-build-debug
 cmake-build-debug/
+
+
