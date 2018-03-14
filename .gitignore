@@ -1,0 +1,22 @@
+#compiled files
+build/
+lib/
+bin/
+*.a
+*.o
+*.so
+*.out
+*.exe
+*.bin
+
+#edited copies
+*~
+
+#pcd files
+*.pcd
+
+#KeyFrameTrajectory
+KeyFrameTrajectory.txt
+
+#cmake-build-debug
+cmake-build-debug/
